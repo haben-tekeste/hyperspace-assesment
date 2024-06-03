@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-const Scene = dynamic(() => import('@/components/Scene'))
+const Scene = dynamic(() => import('@/components/Scene'), { ssr: true })
 
 function Home() {
   return (
