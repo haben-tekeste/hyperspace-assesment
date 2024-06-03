@@ -8,6 +8,30 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer components {
+  .gradient {
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ); */
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("../../public/intro.png") no-repeat center center / cover;
+  }
+
+  .main {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -30,4 +54,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
